@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "368775242553",
+    "project_id": "hepositary",
+    "storage_bucket": "hepositary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368775242553:android:f5d5af7f02b375fb77bee8",
+        "android_client_info": {
+          "package_name": "com.heathvaultiitm.health_vault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368775242553-64s9e3n2a485b3slo6t1efos1fdb56n4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.heathvaultiitm.health_vault",
+            "certificate_hash": "27bd52034df1d20e327a3f5f78b959ec95773ad5"
+          }
+        },
+        {
+          "client_id": "368775242553-3jnhkjh94l2m6vp8vjs794jrpcia55ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsVMC5z4vI4m1msyYADEzorkOlMTTaaVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368775242553-3jnhkjh94l2m6vp8vjs794jrpcia55ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
