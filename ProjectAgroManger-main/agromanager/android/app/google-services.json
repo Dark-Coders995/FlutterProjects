@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "720257783971",
+    "project_id": "agroman-92e9b",
+    "storage_bucket": "agroman-92e9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720257783971:android:344390ab4a3bea1570c716",
+        "android_client_info": {
+          "package_name": "com.example.agromanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720257783971-82nhcv9pibj4tcf9t20lhdof36bl85fh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWp2V5dDS7KLRmb_QlR_p-B7-rzouTBno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720257783971-82nhcv9pibj4tcf9t20lhdof36bl85fh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "720257783971-8jchv97j258jsub6mq29jt3u62jqbq0n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.agromanager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
