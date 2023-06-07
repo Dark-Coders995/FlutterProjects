@@ -30,8 +30,8 @@ android {
     compileSdkVersion flutter.compileSdkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
 
     kotlinOptions {
@@ -70,6 +70,7 @@ dependencies {
 }
 android {
     defaultConfig {
-        minSdkVersion 22
+        minSdkVersion 28
+        targetSdkVersion 28
     }
 }

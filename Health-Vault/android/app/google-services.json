@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "368775242553",
-    "project_id": "hepositary",
-    "storage_bucket": "hepositary.appspot.com"
+    "project_number": "678428235490",
+    "project_id": "basics-4db9f",
+    "storage_bucket": "basics-4db9f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:368775242553:android:f5d5af7f02b375fb77bee8",
+        "mobilesdk_app_id": "1:678428235490:android:53a91409702bc9a054f0bb",
         "android_client_info": {
           "package_name": "com.heathvaultiitm.health_vault"
         }
       },
       "oauth_client": [
         {
-          "client_id": "368775242553-64s9e3n2a485b3slo6t1efos1fdb56n4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.heathvaultiitm.health_vault",
-            "certificate_hash": "27bd52034df1d20e327a3f5f78b959ec95773ad5"
-          }
-        },
-        {
-          "client_id": "368775242553-3jnhkjh94l2m6vp8vjs794jrpcia55ag.apps.googleusercontent.com",
+          "client_id": "678428235490-efimmkfp0gdt7e09ibn06tvf1e5jqp5p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAsVMC5z4vI4m1msyYADEzorkOlMTTaaVU"
+          "current_key": "AIzaSyD70vahF4teNKCB0u0lN4d2wLmpvfRWgl4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "368775242553-3jnhkjh94l2m6vp8vjs794jrpcia55ag.apps.googleusercontent.com",
+              "client_id": "678428235490-efimmkfp0gdt7e09ibn06tvf1e5jqp5p.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
