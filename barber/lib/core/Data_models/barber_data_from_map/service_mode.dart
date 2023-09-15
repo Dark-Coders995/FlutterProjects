@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/widgets.dart';
 
 ///ServiceModel class contains the Individual Service object(Service is something provided by the store)
 ///Contains 2 fields, serviceName - name of the Service provided, price - Price of the service
@@ -22,13 +21,13 @@ class ServiceModel {
 
   /// Factory for converting individual JSON object into ServiceModel object
   factory ServiceModel.fromJson(Map<String, dynamic> json) => ServiceModel(
-        serviceName: json["ServiceName"] == null ? null : json["ServiceName"],
-        price: json["Price"] == null ? null : json["Price"],
+        serviceName: json["ServiceName"],
+        price: json["Price"],
       );
 
   /// Converting individual ServiceModel object to a JSON object
   Map<String, dynamic> toJson() => {
-        "ServiceName": serviceName == null ? null : serviceName,
-        "Price": price == null ? null : price,
+        "ServiceName": serviceName,
+        "Price": price,
       };
 }

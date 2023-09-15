@@ -1,12 +1,13 @@
 import 'package:barber/Provider/map_data_provider.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class Mappage extends StatefulWidget {
+  const Mappage({Key? key}) : super(key: key);
+
   @override
   _MappageState createState() => _MappageState();
 }
@@ -124,9 +125,9 @@ class _MapBodyState extends State<MapBody> {
               ),
               Container(
                 color: Colors.blueGrey[900],
-                child: Row(
+                child: const Row(
                   children: <Widget>[
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.all(20),
                       child: Icon(
                         Icons.keyboard_arrow_up,
@@ -137,7 +138,7 @@ class _MapBodyState extends State<MapBody> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const <Widget>[
+                      children: <Widget>[
                         Text(
                           "Explore Nearby",
                           style: TextStyle(
@@ -169,7 +170,7 @@ class _MapBodyState extends State<MapBody> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(40.0),
                     topLeft: Radius.circular(40.0)),
@@ -181,14 +182,14 @@ class _MapBodyState extends State<MapBody> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(
+                const Text(
                   "Nearby Barbers",
                   style: TextStyle(
                     fontSize: 22,
                     color: Colors.white,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -196,7 +197,7 @@ class _MapBodyState extends State<MapBody> {
                   color: Colors.white38,
                   height: 4,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
@@ -214,18 +215,18 @@ class _MapBodyState extends State<MapBody> {
                   itemCount: obj.mapDataList.length,
                   itemBuilder: (BuildContext ctxt, int index) {
                     return Card(
-                      margin: EdgeInsets.only(bottom: 20),
+                      margin: const EdgeInsets.only(bottom: 20),
                       shadowColor: Colors.white,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0)),
                       color: Colors.black,
                       elevation: 1,
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                      child: const Padding(
+                        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
-                            const CircleAvatar(
+                            CircleAvatar(
                               radius: 25,
                               backgroundImage: NetworkImage(
                                   'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80'),
@@ -308,19 +309,19 @@ class _MapBodyState extends State<MapBody> {
                 FloatingActionButton(
                   backgroundColor: Colors.white,
                   elevation: 15,
-                  child: Icon(
+                  child: const Icon(
                     Icons.tune,
                     color: Colors.black,
                   ),
                   onPressed: () {},
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 FloatingActionButton(
                   backgroundColor: Colors.white,
                   elevation: 15,
-                  child: Icon(
+                  child: const Icon(
                     Icons.my_location,
                     color: Colors.black,
                   ),
@@ -336,7 +337,7 @@ class _MapBodyState extends State<MapBody> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0)),
               color: Colors.white,
-              child: Container(
+              child: SizedBox(
                 height: 70,
                 width: double.infinity,
                 child: Row(
@@ -344,7 +345,7 @@ class _MapBodyState extends State<MapBody> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu,
                         size: 30,
                         color: Colors.black,
@@ -353,19 +354,19 @@ class _MapBodyState extends State<MapBody> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
                           color: Colors.grey[200]),
-                      margin: EdgeInsets.fromLTRB(0, 15, 0, 15),
-                      padding: EdgeInsets.all(10),
+                      margin: const EdgeInsets.fromLTRB(0, 15, 0, 15),
+                      padding: const EdgeInsets.all(10),
                       height: 50,
                       width: MediaQuery.of(context).devicePixelRatio * 100,
-                      child: Text(
+                      child: const Text(
                         "Search Here ...",
                         style: TextStyle(color: Colors.grey, fontSize: 18),
                       ),
                     ),
                     IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.clear,
                         color: Colors.black,
                         size: 30,

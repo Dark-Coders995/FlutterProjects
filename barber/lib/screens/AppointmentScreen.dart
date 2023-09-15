@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppointmentScreen extends StatefulWidget {
+  const AppointmentScreen({Key? key}) : super(key: key);
+
   @override
   _AppointmentScreenState createState() => _AppointmentScreenState();
 }
@@ -14,22 +16,22 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
         elevation: 0,
         backgroundColor: Colors.orangeAccent[100],
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
           ),
           onPressed: () => Navigator.of(context).pop(),
         ),
-        title: Text("Appointment"),
+        title: const Text("Appointment"),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.notifications,
             ),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.sort,
             ),
             onPressed: () => {},
@@ -45,10 +47,10 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                 Card(
                   elevation: 10,
                   color: Colors.orangeAccent[100],
-                  margin: EdgeInsets.all(0),
+                  margin: const EdgeInsets.all(0),
                   child: Column(
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         height: 15,
                       ),
                       Row(
@@ -58,7 +60,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              Row(
+                              const Row(
                                 children: <Widget>[
                                   Text(
                                     "John Doe ",
@@ -72,41 +74,41 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                   )
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
-                              Text(
+                              const Text(
                                 "Thane, India",
                                 style: TextStyle(
                                   fontSize: 14,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Row(
                                 children: <Widget>[
                                   for (int i = 0; i < 5; i++)
-                                    Icon(
+                                    const Icon(
                                       Icons.star,
                                       size: 17,
                                     )
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 7,
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 50,
                           ),
                           IconButton(
-                            icon: Icon(Icons.share),
+                            icon: const Icon(Icons.share),
                             onPressed: () {},
                           ),
                           IconButton(
-                            icon: Icon(Icons.favorite),
+                            icon: const Icon(Icons.favorite),
                             onPressed: () {},
                           )
                         ],
@@ -119,17 +121,17 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      SizedBox(
+                      const SizedBox(
                         height: 40,
                       ),
-                      Text(
+                      const Text(
                         "Available Timings",
                         style: TextStyle(
                             color: Colors.black54,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Container(
@@ -137,10 +139,10 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                         color: Colors.black54,
                         height: 3,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Container(
+                      SizedBox(
                         height: 110,
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
@@ -150,7 +152,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                               children: <Widget>[
                                 ClipRRect(
                                   borderRadius: BorderRadius.circular(8),
-                                  child: Container(
+                                  child: const SizedBox(
                                     height: 110,
                                     width: 110,
                                   ),
@@ -167,7 +169,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                   height: 110,
                                   width: 90,
                                   alignment: Alignment.center,
-                                  child: Column(
+                                  child: const Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
                                       Text(
@@ -194,17 +196,17 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                           },
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Text(
+                      const Text(
                         "Services",
                         style: TextStyle(
                             color: Colors.black54,
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Container(
@@ -212,7 +214,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                         color: Colors.black54,
                         height: 3,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
                       Padding(
@@ -220,7 +222,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                         child: Column(
                           children: <Widget>[
                             for (int i = 0; i < 2; i++)
-                              Row(
+                              const Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
@@ -240,10 +242,10 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                                   ),
                                 ],
                               ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Text(
@@ -268,37 +270,37 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                     ],
                   ),
                 ),
-                Divider(
+                const Divider(
                   height: 15,
                   color: Colors.grey,
                 ),
                 Padding(
-                  padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text(
+                          const Text(
                             "Whom to book for?",
                             style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
-                              CircleAvatar(
+                              const CircleAvatar(
                                 radius: 17,
                                 backgroundImage: NetworkImage(
                                     'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80'),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 8,
                               ),
                               Text(
@@ -312,7 +314,7 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                           )
                         ],
                       ),
-                      Icon(
+                      const Icon(
                         Icons.check_circle,
                         color: Colors.redAccent,
                         size: 40,
@@ -320,14 +322,14 @@ class _AppointmentScreenState extends State<AppointmentScreen> {
                     ],
                   ),
                 ),
-                Divider(
+                const Divider(
                   height: 15,
                   color: Colors.grey,
                 ),
               ],
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 25,
             top: 20,
             child: CircleAvatar(

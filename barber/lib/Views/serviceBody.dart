@@ -57,30 +57,30 @@ class _ServiceBodyState extends State<ServiceBody> {
                     borderRadius: const BorderRadius.all(Radius.circular(5.0)),
                   ),
                   child: !_check[index]
-                      ? Icon(
+                      ? const Icon(
                           Icons.add,
                           size: 26.0,
                           color: Colors.black,
                         )
-                      : Icon(
+                      : const Icon(
                           Icons.clear,
                           size: 26.0,
                           color: Colors.white,
                         ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Expanded(
                 child: Text(
                   name,
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
               Text(
                 '\u20B9 $price',
-                style: Theme.of(context).textTheme.headline6,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ],
           ),
@@ -102,7 +102,7 @@ class _ServiceBodyState extends State<ServiceBody> {
           for (int i = 0; i < haircuts.length; i++)
             haircutprice(haircuts.keys.toList()[i].toString(),
                 haircuts[haircuts.keys.toList()[i].toString()], i),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Container(
@@ -111,7 +111,7 @@ class _ServiceBodyState extends State<ServiceBody> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Center(
@@ -136,7 +136,7 @@ class _ServiceBodyState extends State<ServiceBody> {
                   },
                   child: Card(
                     color: _booking ? Colors.blue : Colors.grey[850],
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
                     elevation: 3,
                     child: Padding(

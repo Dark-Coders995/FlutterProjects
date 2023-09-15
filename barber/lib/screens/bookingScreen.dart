@@ -41,7 +41,7 @@ class _BookingScreenState extends State<BookingScreen>
                 const SizedBox(width: 50,),
                 Text(
                   "Booking",
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
                 IconButton(
                   icon: const Icon(Icons.notifications),
@@ -81,14 +81,14 @@ class _BookingScreenState extends State<BookingScreen>
                       ),
                       Text(
                         'John Doe',
-                        style: Theme.of(context).textTheme.headline1,
+                        style: Theme.of(context).textTheme.displayLarge,
                       ),
                       const SizedBox(
                         height: 7,
                       ),
                       Text(
                         'Thane',
-                        style: Theme.of(context).textTheme.headline2,
+                        style: Theme.of(context).textTheme.displayMedium,
                       ),
                     ],
                   ),
@@ -136,10 +136,10 @@ class _BookingScreenState extends State<BookingScreen>
                   ),
                   body: TabBarView(
                     controller: _tabController,
-                    children: <Widget>[
+                    children: const <Widget>[
                       ServiceBody(),
                       GalleryBody(),
-                      const Text("hello"),
+                      Text("hello"),
                     ],
                   ),
                 ),

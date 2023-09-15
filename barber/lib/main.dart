@@ -31,34 +31,33 @@ class MyApp extends StatelessWidget {
           // Define the default brightness and colors.
           brightness: Brightness.dark,
           primaryColor: Colors.blueGrey[900],
-          accentColor: Colors.cyan[600],
 
           // Define the default font family.
 
           // Define the default TextTheme. Use this to specify the default
           // text styling for headlines, titles, bodies of text, and more.
-          textTheme: TextTheme(
-            headline1: TextStyle(
+          textTheme: const TextTheme(
+            displayLarge: TextStyle(
                 fontSize: 25.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.white),
-            headline2: TextStyle(fontSize: 20.0, fontWeight: FontWeight.normal),
-            headline6: TextStyle(fontSize: 20.0, fontStyle: FontStyle.normal),
-            bodyText2: TextStyle(
+            displayMedium: TextStyle(fontSize: 20.0, fontWeight: FontWeight.normal),
+            titleLarge: TextStyle(fontSize: 20.0, fontStyle: FontStyle.normal),
+            bodyMedium: TextStyle(
               fontSize: 14.0,
             ),
-          ),
+          ), colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.cyan[600]),
         ),
 
         // ------------------- Manage Routes ------------------- //
         //Add new routes here
         routes: {
-          '/bookingScreen': (context) => BookingScreen(),
-          '/mappage': (context) => Mappage(),
-          '/appointmentScreen': (context) => AppointmentScreen(),
+          '/bookingScreen': (context) => const BookingScreen(),
+          '/mappage': (context) => const Mappage(),
+          '/appointmentScreen': (context) => const AppointmentScreen(),
         },
 
-        home: SplashScreen(),
+        home: const SplashScreen(),
         debugShowCheckedModeBanner: false,
       ),
     );
@@ -66,6 +65,8 @@ class MyApp extends StatelessWidget {
 }
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({Key? key}) : super(key: key);
+
   @override
   _SplashScreen createState() => _SplashScreen();
 }
@@ -87,10 +88,10 @@ class _SplashScreen extends State<SplashScreen> {
   void initState() {
     super.initState();
     checkSharedPrefs();
-    Timer(Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (BuildContext context) => AppointmentScreen(),
+          builder: (BuildContext context) => const AppointmentScreen(),
         ),
       );
     });

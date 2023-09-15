@@ -59,6 +59,8 @@ class CategoryModel {
 }
 
 class GalleryBody extends StatefulWidget {
+  const GalleryBody({Key? key}) : super(key: key);
+
   @override
   _GalleryBodyState createState() => _GalleryBodyState();
 }
@@ -73,7 +75,7 @@ class _GalleryBodyState extends State<GalleryBody> {
           // horizontal, this produces 2 rows.
           childAspectRatio:1.1,
           crossAxisCount: 3,
-          padding: EdgeInsets.fromLTRB(15, 20, 15, 20),
+          padding: const EdgeInsets.fromLTRB(15, 20, 15, 20),
           // Generate 100 widgets that display their index in the List.
           children: List.generate(14, (index) {
             return Center(child: CategoryModel().model(index));
