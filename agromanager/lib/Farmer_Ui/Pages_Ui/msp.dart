@@ -1,4 +1,3 @@
-import 'package:another_carousel_pro/another_carousel_pro.dart';
 import 'package:flutter/material.dart';
 
 class MSp extends StatelessWidget {
@@ -23,8 +22,8 @@ class MSp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Column(
-                        children: const <Widget>[
+                      const Column(
+                        children: <Widget>[
                           Text(
                             'Welcome To MSP Section',
                             style: TextStyle(

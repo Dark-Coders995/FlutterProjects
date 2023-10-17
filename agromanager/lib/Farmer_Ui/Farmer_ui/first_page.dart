@@ -5,8 +5,7 @@ import 'package:agromanager/Farmer_Ui/Pages_Ui/List%20Crop/list.dart';
 import 'package:agromanager/Farmer_Ui/Pages_Ui/msp.dart';
 import 'package:agromanager/Farmer_Ui/Pages_Ui/weather.dart';
 import 'package:flutter/material.dart';
-import 'package:another_carousel_pro/another_carousel_pro.dart';
-
+import 'package:lecle_flutter_carousel_pro/lecle_flutter_carousel_pro.dart';
 import '../../main.dart';
 
 class FirstPage extends StatelessWidget {

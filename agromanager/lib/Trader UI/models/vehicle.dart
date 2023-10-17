@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -113,6 +112,7 @@ class _VehicleRegistrationState extends State<VehicleRegistration> {
           if (value!.isEmpty) {
             return ("Price Of Vehicle cannot be Empty");
           }
+          return null;
         },
         onSaved: (value) {
           priceEditingController.text = value!;

@@ -64,6 +64,7 @@ class _CropRegisterState extends State<CropRegister> {
           if (value!.isEmpty) {
             return ("Phone Number cannot be Empty");
           }
+          return null;
         },
         onSaved: (value) {
           priceEditingController.text = value!;
@@ -135,6 +136,7 @@ class _CropRegisterState extends State<CropRegister> {
           if (value!.isEmpty) {
             return ("Price Of Crop cannot be Empty");
           }
+          return null;
         },
         onSaved: (value) {
           priceEditingController.text = value!;

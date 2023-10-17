@@ -163,11 +163,11 @@ class _RabiScreenState extends State<RabiScreen>
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 0.0),
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const <Widget>[
+                children: <Widget>[
                   /*Icon(
                     Icons.menu,
                     size: 30.0,

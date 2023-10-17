@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
 }
 
 class Foreground extends StatelessWidget {
-   const Foreground() : super();
+   const Foreground({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -123,13 +123,12 @@ class Foreground extends StatelessWidget {
                   ),
                 ),
                 OutlinedButton(
-                  child: const Icon(Icons.more_horiz),
                   style: OutlinedButton.styleFrom(
-                    primary: Colors.white,
-                    side: const BorderSide(width: 1, color: Colors.white),
+                    foregroundColor: Colors.white, side: const BorderSide(width: 1, color: Colors.white),
                     shape: const CircleBorder(),
                   ),
                   onPressed: () {},
+                  child: const Icon(Icons.more_horiz),
                 )
               ]),
               const SizedBox(height: 30),
@@ -165,7 +164,7 @@ class Foreground extends StatelessWidget {
                               Text(location.timing),
                               const SizedBox(height: 40),
                               Text(
-                                location.temperature.toString() + '°',
+                                '${location.temperature}°',
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 40,

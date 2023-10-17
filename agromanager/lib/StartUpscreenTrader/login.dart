@@ -1,7 +1,6 @@
 
 import 'package:agromanager/Trader%20UI/traderhome.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:agromanager/StartUpscreenTrader//signup.dart';
 /*
 class LoginPage extends StatelessWidget {
@@ -245,6 +244,7 @@ class _LoginScreenState extends State<LoginScreen> {
           if (!regex.hasMatch(value)) {
             return ("Enter Valid Password(Min. 6 Character)");
           }
+          return null;
         },
         onSaved: (value) {
           passwordController.text = value!;

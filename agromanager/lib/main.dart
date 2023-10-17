@@ -44,8 +44,8 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Column(
-                  children: const <Widget>[
+                const Column(
+                  children: <Widget>[
                     Text(
                       'Welcome To AgroManager',
                       style: TextStyle(

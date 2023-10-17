@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:agromanager/StartUpscreenFarmer/signup.dart';
 /*
 class LoginPage extends StatelessWidget {
@@ -245,6 +244,7 @@ class _LoginScreenFarmState extends State<LoginScreenFarm> {
           if (!regex.hasMatch(value)) {
             return ("Enter Valid Password(Min. 6 Character)");
           }
+          return null;
         },
         onSaved: (value) {
           passwordController.text = value!;
