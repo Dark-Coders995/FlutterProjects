@@ -30,6 +30,7 @@ dependencies:
   cloud_firestore: ^4.9.3
   firebase_auth: ^4.10.1
   lecle_flutter_carousel_pro: ^0.0.3
+  firebase_core: ^2.22.0
   flutter:
     sdk: flutter
   fluttertoast: ^8.0.8
